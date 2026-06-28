@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Finance Tracker</title>
+
+<link rel="stylesheet" href="style7.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+    <button id="themeToggle">🌙 Dark mode</button>
+
+<h1>💰 Finance Tracker</h1>
+
+<div class="balance-card">
+
+<h2>Your Balance</h2>
+
+<h1 id="balance">₹0</h1>
+
+</div>
+
+<div class="income-expense">
+
+<div class="income">
+
+<h3>Income</h3>
+
+<p id="money-plus">₹0</p>
+
+</div>
+
+<div class="expense">
+
+<h3>Expense</h3>
+
+<p id="money-minus">₹0</p>
+
+</div>
+
+</div>
+
+<form id="form">
+
+<input
+type="text"
+id="text"
+placeholder="Description"
+required>
+
+<input
+type="number"
+id="amount"
+placeholder="Amount (+ Income / - Expense)"
+required>
+
+<input type="date"
+id="date"
+required>
+
+<select id="category">
+    <option value="Food">🍔 Food</option>
+    <option value="Shopping">🛍 Shopping</option>
+    <option value="Travel">✈ Travel</option>
+    <option value="Bills">💡 Bills</option>
+    <option value="Salary">💰 Salary</option>
+    <option value="Other">📦 Other</option>
+</select>
+
+<button>Add Transaction</button>
+
+</form>
+<input 
+type="text"
+id="search"
+placeholder="search Transactions...">
+
+<button id="download">Download CSV Report</button>
+
+<h2>Transaction History</h2>
+
+<ul id="list"></ul>
+
+<div class="chart">
+
+<canvas id="myChart"></canvas>
+
+</div>
+
+</div>
+
+<script src="script5.js"></script>
+
+</body>
+
+</html>
